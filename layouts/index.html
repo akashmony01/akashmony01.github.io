@@ -51,7 +51,7 @@
                 </div>
                 <div class="flex items-center justify-end gap-3 py-4">
                     {{ range .Params.socials }}
-                    <a href="" class="block">
+                    <a aria-label="{{ .platform }}" href="{{ .url }}" target="_blank" class="block">
                         <img class="w-10" src="{{.icon}}" alt="">
                     </a>
                     {{ end }}
@@ -59,7 +59,7 @@
                 <div class="text-right">
                     {{ .Params.marketplace.short_desc }}
                     {{ range .Params.marketplace.profiles }}
-                    <a href="{{ .url }}" target="_blank" class="ml-1.5 inline-block underline">
+                    <a href="{{ .url }}" target="_blank" class="inline-block underline ml-1">
                         {{ .platform }}
                     </a>
                     {{ end }}
@@ -67,13 +67,13 @@
             </nav>
             <article class="ml-48 w-6/12 absolute left-2/4 top-2/4 transform -translate-y-2/4">
                 <p class="text-2xl">
-                    Hi there, myself..
+                    {{ .Params.subheading }}
                 </p>
                 <h1 class="text-5xl py-4">
-                    Mohammed Akash
+                    {{ .Params.heading }}
                 </h1>
                 <p class="max-w-md text-xl">
-                    I am professional web developer with a great passion for programming. I have been working as freelance web designer and developer since 2020.
+                    {{ .Params.decsription }}
                 </p>
             </article>
         </div>
