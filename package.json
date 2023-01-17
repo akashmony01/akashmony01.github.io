@@ -1,0 +1,26 @@
+{
+  "name": "hugo-port",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build_tw": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css",
+    "watch_tw": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css --watch"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akashmony01/akashmony01.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akashmony01/akashmony01.github.io/issues"
+  },
+  "homepage": "https://github.com/akashmony01/akashmony01.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

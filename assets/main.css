@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html,
+    body{
+        scroll-behavior: smooth;
+        @apply text-purple-500 font-sans font-normal antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        @apply font-bold;
+    }
+
+    a,
+    button,
+    .btn,
+    .button {
+        @apply cursor-pointer duration-300 hover:opacity-80
+    }
+
+    .navItem .navText {
+        @apply opacity-50 duration-300;
+    }
+
+    .navItem:hover .navText {
+        @apply opacity-100;
+    }
+}
