@@ -1,0 +1,32 @@
+[
+    {
+        "platform": "facebook",
+        "icon": "/images/socials/fb.png",
+        "url": "https://www.facebook.com/akashmony01"
+    },
+    {
+        "platform": "twitter",
+        "icon": "/images/socials/tt.png",
+        "url": "https://twitter.com/akashmony01"
+    },
+    {
+        "platform": "linkedin",
+        "icon": "/images/socials/li.png",
+        "url": "https://www.linkedin.com/in/akashmony01/"
+    },
+    {
+        "platform": "instagram",
+        "icon": "/images/socials/ig.png",
+        "url": "https://www.instagram.com/akashmony01/"
+    },
+    {
+        "platform": "gitgub",
+        "icon": "/images/socials/gh.png",
+        "url": "https://github.com/akashmony01"
+    },
+    {
+        "platform": "reddit",
+        "icon": "/images/socials/rd.png",
+        "url": "/"
+    }
+]

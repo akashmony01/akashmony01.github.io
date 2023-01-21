@@ -1,0 +1,19 @@
+{
+    "subheading": "Hi there, myself..",
+    "heading": "Mohammed Akash",
+    "decsription": "I am professional web developer with a great passion for programming. I have been working as freelance web designer and developer since 2020.",
+    "image": "/images/akash.jpg",
+    "marketplace": {
+        "short_desc": "Marketplace:",
+        "profiles": [
+            {
+                "platform": "Upwork",
+                "url": "https://www.upwork.com/freelancers/~019df2599cc928aed1"
+            },
+            {
+                "platform": "Fiverr",
+                "url": "https://www.fiverr.com/akashmony01"
+            }
+        ]
+    }
+}

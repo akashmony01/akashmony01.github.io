@@ -6,8 +6,12 @@
 @layer base {
     html,
     body{
-        scroll-behavior: smooth;
+        
         @apply text-purple-500 font-sans font-normal antialiased;
+    }
+
+    .scrollable {
+        scroll-behavior: smooth;
     }
 
     h1,
@@ -61,4 +65,21 @@
     .tagBtn.black {
         @apply bg-black hover:bg-white text-white hover:text-black border-black;
     }
+
+    .arrow-down {
+        width: 0; 
+        height: 0; 
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 40px solid;
+    }
+
+    .vMenuBtn {
+        @apply relative;
+    }
+    .vMenuBtn::before{
+        content: '';
+        @apply absolute top-2/4 left-full w-11 bg-purple-500 h-0.5 transform -translate-y-2/4;
+    }
+
 }
