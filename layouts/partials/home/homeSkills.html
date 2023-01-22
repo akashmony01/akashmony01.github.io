@@ -1,0 +1,50 @@
+<section id="skills" class="relative text-white min-h-screen bg-gray-700 flex flex-col lg:flex-row items-start">
+    <div class="absolute lg:static -top-3 -right-1.5 lg:sticky lg:h-screen w-auto lg:w-16 flex flex-col items-end lg:items-center lg:justify-center z-0">
+        <h2 class="text-right lg:text-center uppercase text-5xl sm:text-6xl md:text-7xl font-black transform lg:-rotate-90 opacity-20">
+            {{ .Site.Data.homeSkills.heading }}
+        </h2>
+    </div>
+    <div class="w-full min-h-screen py-20 flex flex-col items-center justify-center">
+        <div class="container flex flex-col lg:flex-row items-center gap-20 lg:gap-10 xl:gap-32">
+            <article class="relative w-auto max-w-md  lg:w-5/12 xl:w-6/12 text-xl leading-snug italic font-light p-5 md:p-10">
+                <span class="block absolute top-0 left-0 w-0.5 h-20 bg-purple-500"></span>
+                <span class="block absolute top-0 left-0 w-20 h-0.5 bg-purple-500"></span>
+
+                <p class="skillText">
+                    {{ .Site.Data.homeSkills.content.text1 | safeHTML }}
+                </p>
+                <p class="mt-6">
+                    Check out 
+                    <a href="{{ .Site.Data.homeSkills.content.fiverrUrl }}" class="underline text-purple-500">
+                        fiverr profile.
+                    </a>
+                </p>
+                <p class="mt-6">
+                    {{ .Site.Data.homeSkills.content.text2 | safeHTML }}
+                </p>
+
+                <span class="block absolute bottom-0 right-0 w-20 h-0.5 bg-purple-500"></span>
+                <span class="block absolute bottom-0 right-0 w-0.5 h-20 bg-purple-500"></span>
+            </article>
+            <article class="w-full sm:w-auto lg:w-7/12 xl:w-6/12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-y-12 gap-x-5 justify-start">
+                {{ range .Site.Data.homeSkills.skills_set }}
+                <div class="{{.color}} skillItem">
+                    <h3 class="capitalize text-base sm:text-xl font-normal pb-2 px-3 lg:inline-block">
+                        {{ .title }}
+                    </h3>
+                    <ul class="border-l flex flex-col gap-2 pt-3 md:text-lg">
+                        {{ range .skills }}
+                        <li class="relative pl-5">
+                            <span class="block w-5 h-px absolute left-0 top-2/4"></span>
+                            <a href="{{ .url }}" class="hover:text-white">
+                                {{ .name }}
+                            </a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            </article>
+        </div>
+    </div>
+</section>

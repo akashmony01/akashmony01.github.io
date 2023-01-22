@@ -1,0 +1,154 @@
+{
+    "heading": "skills",
+    "content": {
+        "text1": "After leaving my regular job, I have been working as freelancer developer from 2020. I have <span>40+</span> fiverr review with <span>5 star</span> rating.",
+        "fiverrUrl": "https://www.fiverr.com/akashmony01",
+        "text2": "Throughout my career I developed some great skills on:"
+    },
+    "skills_set": [
+        {
+            "title": "Frontend" ,
+            "color": "purple",
+            "skills": [
+                {
+                    "name": "HTML5",
+                    "url": "html"
+                },
+                {
+                    "name": "CSS3",
+                    "url": "css3"
+                },
+                {
+                    "name": "Javscript",
+                    "url": "html"
+                },
+                {
+                    "name": "SCSS",
+                    "url": "scss"
+                },
+                {
+                    "name": "SASS",
+                    "url": "sass"
+                },
+                {
+                    "name": "Bootsrap",
+                    "url": "bootstrap"
+                },
+                {
+                    "name": "Tailwind",
+                    "url": "tailwind"
+                }
+            ]
+        },
+        {
+            "title": "Static site seneratirs" ,
+            "color": "green",
+            "skills": [
+                {
+                    "name": "Astro",
+                    "url": "astro"
+                },
+                {
+                    "name": "Gridsome",
+                    "url": "Gridsome"
+                },
+                {
+                    "name": "Hugo",
+                    "url": "hugo"
+                },
+                {
+                    "name": "Eleventy",
+                    "url": "eleventy"
+                },
+                {
+                    "name": "Next.js",
+                    "url": "nextjs"
+                },
+                {
+                    "name": "Jeykyll",
+                    "url": "jeykyll"
+                }
+            ]
+        },
+        {
+            "title": "Framework / library" ,
+            "color": "blue",
+            "skills": [
+                {
+                    "name": "Node Js",
+                    "url": "nodejs"
+                },
+                {
+                    "name": "Jquery",
+                    "url": "jquery"
+                },
+                {
+                    "name": "Vue Js",
+                    "url": "vuejs"
+                },
+                {
+                    "name": "Django",
+                    "url": "djnago"
+                }
+            ]
+        },
+        {
+            "title": "Backend",
+            "color": "orange",
+            "skills": [
+                {
+                    "name": "PHP",
+                    "url": "php"
+                },
+                {
+                    "name": "MySql",
+                    "url": "jquery"
+                },
+                {
+                    "name": "Ajax",
+                    "url": "vuejs"
+                }
+            ]
+        },
+        {
+            "title": "Language",
+            "color": "pink",
+            "skills": [
+                {
+                    "name": "c",
+                    "url": "c"
+                },
+                {
+                    "name": "c++",
+                    "url": "c++"
+                },
+                {
+                    "name": "Python",
+                    "url": "Python"
+                }
+            ]
+        },
+        {
+            "title": "UI/UX Platform",
+            "color": "blue",
+            "skills": [
+                {
+                    "name": "Figma",
+                    "url": "figma"
+                },
+                {
+                    "name": "Sketch",
+                    "url": "sketch"
+                },
+                {
+                    "name": "Adobe XD",
+                    "url": "adobe-xd"
+                },
+                {
+                    "name": "Photoshop",
+                    "url": "photoshop"
+                }
+            ]
+        }
+    ]
+}

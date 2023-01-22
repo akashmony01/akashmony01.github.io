@@ -3,17 +3,107 @@
     "heading": "Mohammed Akash",
     "decsription": "I am professional web developer with a great passion for programming. I have been working as freelance web designer and developer since 2020.",
     "image": "/images/akash.jpg",
-    "marketplace": {
-        "short_desc": "Marketplace:",
-        "profiles": [
-            {
-                "platform": "Upwork",
-                "url": "https://www.upwork.com/freelancers/~019df2599cc928aed1"
-            },
-            {
-                "platform": "Fiverr",
-                "url": "https://www.fiverr.com/akashmony01"
-            }
-        ]
-    }
+    "marketText": "Marketplace:",
+    "tags": [
+        {
+            "tag": "HTML",
+            "color": "orange",
+            "url": "html"
+        },
+        {
+            "tag": "CSS",
+            "color": "pink",
+            "url": "css"
+        },
+        {
+            "tag": "Javascript",
+            "color": "green",
+            "url": "javascript"
+        },
+        {
+            "tag": "Jquery",
+            "color": "red",
+            "url": "jquery"
+        },
+        {
+            "tag": "Bootstrap",
+            "color": "indigo",
+            "url": "bootstrap"
+        },
+        {
+            "tag": "SASS",
+            "color": "pink",
+            "url": "sass"
+        },
+        {
+            "tag": "SCSS",
+            "color": "black",
+            "url": "scss"
+        },
+        {
+            "tag": "Tailwind",
+            "color": "pink",
+            "url": "tailwind"
+        },
+        {
+            "tag": "Vue Js",
+            "color": "green",
+            "url": "vuejs"
+        },
+        {
+            "tag": "Netlify CMS",
+            "color": "blue",
+            "url": "netlify-cms"
+        },
+        {
+            "tag": "Hugo",
+            "color": "pink",
+            "url": "hugo"
+        },
+        {
+            "tag": "Gridsome",
+            "color": "green",
+            "url": "gridsome"
+        },
+        {
+            "tag": "Astro",
+            "color": "black",
+            "url": "astro"
+        },
+        {
+            "tag": "Eleventy",
+            "color": "red",
+            "url": "eleventy"
+        },
+        {
+            "tag": "Node Js",
+            "color": "green",
+            "url": "nodejs"
+        },
+        {
+            "tag": "Django",
+            "color": "orange",
+            "url": "django"
+        },
+        {
+            "tag": "PHP",
+            "color": "black",
+            "url": "php"
+        },
+        {
+            "tag": "MYsql",
+            "color": "pink",
+            "url": "mysql"
+        },
+        {
+            "tag": "Wordpress",
+            "color": "indigo",
+            "url": "wordpress"
+        },
+        {
+            "tag": "Ajax",
+            "color": "blue",
+            "url": "ajax"
+        }
+    ]
 }
