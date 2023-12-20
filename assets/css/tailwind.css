@@ -1,0 +1,219 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+    /* Open sans fonts */
+    @font-face {
+        font-family: Open Sans;
+        src: url('/assets/fonts/Open_Sans/OpenSans-ExtraLight.ttf');
+        font-weight: 200;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Open Sans;
+        src: url('/assets/fonts/Open_Sans/OpenSans-Light.ttf');
+        font-weight: 300;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Open Sans;
+        src: url('/assets/fonts/Open_Sans/OpenSans-Regular.ttf');
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Open Sans;
+        src: url('/assets/fonts/Open_Sans/OpenSans-Medium.ttf');
+        font-weight: 500;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Open Sans;
+        src: url('/assets/fonts/Open_Sans/OpenSans-SemiBold.ttf');
+        font-weight: 600;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Open Sans;
+        src: url('/assets/fonts/Open_Sans/OpenSans-Bold.ttf');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    /* Antonio fonts */
+    @font-face {
+        font-family: Antonio;
+        src: url('/assets/fonts/Antonio/Antonio-ExtraLight.ttf');
+        font-weight: 200;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Antonio;
+        src: url('/assets/fonts/Antonio/Antonio-Light.ttf');
+        font-weight: 300;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Antonio;
+        src: url('/assets/fonts/Antonio/Antonio-Regular.ttf');
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Antonio;
+        src: url('/assets/fonts/Antonio/Antonio-Medium.ttf');
+        font-weight: 500;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Antonio;
+        src: url('/assets/fonts/Antonio/Antonio-SemiBold.ttf');
+        font-weight: 600;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Antonio;
+        src: url('/assets/fonts/Antonio/Antonio-Bold.ttf');
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    /* Roboto Slab fonts */
+    @font-face {
+        font-family: Roboto Slab;
+        src: url('/assets/fonts/Roboto_Slab/RobotoSlab-Light.ttf');
+        font-weight: 300;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Roboto Slab;
+        src: url('/assets/fonts/Roboto_Slab/RobotoSlab-Regular.ttf');
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Roboto Slab;
+        src: url('/assets/fonts/Roboto_Slab/RobotoSlab-Medium.ttf');
+        font-weight: 500;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Roboto Slab;
+        src: url('/assets/fonts/Roboto_Slab/RobotoSlab-SemiBold.ttf');
+        font-weight: 600;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Roboto Slab;
+        src: url('/assets/fonts/Roboto_Slab/RobotoSlab-Bold.ttf');
+        font-weight: 700;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: Roboto Slab;
+        src: url('/assets/fonts/Roboto_Slab/RobotoSlab-ExtraBold.ttf');
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    html,
+    body{
+        scroll-behavior: smooth;
+        @apply text-black font-sans font-normal antialiased text-textColor;
+    }
+
+    a,
+    button,
+    .button,
+    .btn{
+        @apply cursor-pointer duration-300 hover:opacity-80;
+    }
+
+    .below-header-index {
+        z-index: 9997;
+    }
+
+    .header-index {
+        z-index: 9998;
+    }
+
+    .above-header-index {
+        z-index: 9999;
+    }
+
+    .colPaddingOne {
+        @apply px-8 md:px-12 lg:px-8 xl:px-16 py-12 lg:py-16 xl:py-20;
+    }
+
+    .colPaddingTwo {
+        @apply px-8 md:px-12 lg:px-8 xl:px-12 pb-12 lg:py-16 xl:py-20
+    }
+
+    .textContent span {
+        @apply font-bold text-secondary;
+    }
+
+    .textContent a {
+        @apply underline text-secondary;
+    }
+
+    #header {
+        @apply w-full md:w-48 xl:w-52 duration-300;
+    }
+
+    #header.scrolled {
+        @apply w-full md:w-14;
+    }
+
+    #header.scrolled .menuItem .label {
+        @apply hidden;
+    }
+
+    #header .menuItem.active {
+        @apply text-secondary;
+    }
+
+    #homeBody {
+        @apply pl-0 md:pl-48 xl:pl-52 duration-300;
+    }
+
+    #homeBody.scrolled {
+        @apply md:pl-14;
+    }
+
+    #header.scrolled .pageTitle {
+        @apply static md:absolute top-4 left-4 text-secondary;
+    }
+
+    .skillList {
+        @apply relative lg:border-l-4 border-primary;
+    }
+
+    .skillList::after {
+        content: '';
+        @apply hidden lg:block absolute top-2/4 left-0 w-10 lg:w-14 xl:w-16 h-1 bg-primary transform -translate-x-full -translate-y-2/4;
+    }
+
+    .skillList .skillItem {
+        @apply relative;
+    }
+
+    .skillList .skillItem::after{
+        content: '';
+        @apply hidden lg:block absolute top-2/4 left-0 w-8 lg:w-8 xl:w-12 h-1 bg-primary transform -translate-x-full -translate-y-2/4;
+    }
+
+    .bgBox {
+        @apply relative pl-4 py-1;
+    }
+
+    .bgBox::before {
+        content: '';
+        @apply z-0 absolute -top-1 bottom-0 left-0 w-2/3 bg-primary;
+    }
+
+    .bgBox .bgBoxInner{
+        @apply sticky z-10;
+    }
+}
