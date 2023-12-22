@@ -1,0 +1,25 @@
+<section class="py-16 lg:py-20 text-primary">
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-10">
+        {% for project in site.projects %}      
+        <a href="{{project.url}}" class="postItem block hover:opacity-100">
+            <figure class="postImage w-full aspect-video bg-primary-dark border-2 border-textColor/20 hover:border-secondary/80 duration-300 shadow-md">
+                {% if project.image %}
+                <img
+                    class="w-full h-full object-cover object-center"
+                    src="{{project.image}}"
+                    alt="img"
+                />
+                {% endif %}
+            </figure>
+            {% if project.title %}
+                <h3 class="mt-5 text-lg sm:text-xl lg:text-2xl hover:underline font-bold">
+                    {{ project.title }}
+                </h3>
+                {% endif %}
+            <div class="mt-2 text-base">
+                build with: html, css, javascript, djnago  
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</section>

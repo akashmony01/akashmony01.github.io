@@ -1,6 +1,29 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://akashmony01.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "" # the name of your site, e.g. ACME Corp.
+title: "Mohammed Akash" # the name of your site, e.g. ACME Corp.
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: blog_single
+      permalink: /blog/:title/
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: projects_single
+      permalink: /projects/:title/
+
+
+collections:
+  projects:
+    output: true
+
 
 exclude:
   - .jekyll-cache/

@@ -13,16 +13,29 @@
                 <span class="block absolute top-0 right-0 h-px w-24 lg:w-28 bg-secondary"></span>
                 <span class="block absolute top-0 right-0 h-24 lg:h-28 w-px bg-secondary"></span>
                 
+                {% if page.skills.text1 %}
                 <p class="textContent">
-                    After leaving my regular job, I have been working as freelancer developer from 2020. 
-                    I have <span>40+</span> fiverr review with <span>5 star</span> rating.
+                    {{page.skills.text1|safe}}
                 </p>
+                {% endif %}
+
                 <p class="textContent">
-                    Check out <a href="">fiverr profile</a>.
+                    Check out my 
+                    {% if site.data.info.fiverr.link %}
+                    <a href="{{site.data.info.fiverr.link}}" target="_blank">fiverr</a>
+                    {% endif %}
+                    and
+                    {% if site.data.info.upwork.link %}
+                    <a href="{{site.data.info.upwork.link}}" target="_blank">upwork</a>
+                    {% endif %}
+                    profile.
                 </p>
+
+                {% if page.skills.text2 %}
                 <p class="textContent">
-                    Throughout my career I developed some awesome skills on frontend.
+                    {{page.skills.text2|safe}}
                 </p>
+                {% endif %}
 
                 <span class="block absolute bottom-0 left-0 h-px w-24 lg:w-28 bg-secondary"></span>
                 <span class="block absolute bottom-0 left-0 h-24 lg:h-28 w-px bg-secondary"></span>
@@ -30,176 +43,27 @@
         </article>
     </div>
     <div class="colPaddingTwo flex flex-col justify-center w-full lg:w-7/12 bg-primary-light">
+        {% if page.skills.skill_list %}
         <ul class="skillList lg:pl-8 xl:pl-12 max-w-full flex flex-col lg:items-start gap-5 text-base md:text-lg lg:text-xl">
+            {% for item in page.skills.skill_list %}
             <li class="skillItem px-6 py-4 bg-primary flex flex-wrap items-start gap-y-1 gap-x-2 gap-x-3">
+                {% if item.name %}
                 <p class="text-secondary">
-                    frontend:
+                    {{item.name}}
                 </p>
+                {% endif %}
+                {% if item.list %}
                 <p>
-                    html5,
+                    {{item.list}}
                 </p>
-                <p>
-                    css3,
-                </p>
-                <p>
-                    javascript,
-                </p>
-                <p>
-                    scss,
-                </p>
-                <p>
-                    sass,
-                </p>
-                <p>
-                    bootsrap,
-                </p>
-                <p>
-                    tailwind
-                </p>
+                {% endif %}
             </li>
-            <li class="skillItem px-6 py-4 bg-primary flex flex-wrap items-start gap-y-1 gap-x-2 gap-x-3">
-                <p class="text-secondary">
-                    frontend:
-                </p>
-                <p>
-                    html5,
-                </p>
-                <p>
-                    css3,
-                </p>
-                <p>
-                    javascript,
-                </p>
-                <p>
-                    scss,
-                </p>
-                <p>
-                    sass,
-                </p>
-                <p>
-                    bootsrap,
-                </p>
-                <p>
-                    tailwind
-                </p>
-                <p>
-                    javascript,
-                </p>
-                <p>
-                    scss,
-                </p>
-                <p>
-                    sass,
-                </p>
-                <p>
-                    bootsrap,
-                </p>
-                <p>
-                    tailwind
-                </p>
-            </li>
-            <li class="skillItem px-6 py-4 bg-primary flex flex-wrap items-start gap-y-1 gap-x-2 gap-x-3">
-                <p class="text-secondary">
-                    frontend:
-                </p>
-                <p>
-                    html5,
-                </p>
-                <p>
-                    css3,
-                </p>
-                <p>
-                    javascript,
-                </p>
-                <p>
-                    scss,
-                </p>
-                <p>
-                    sass,
-                </p>
-                <p>
-                    javascript,
-                </p>
-                <p>
-                    scss,
-                </p>
-                <p>
-                    sass,
-                </p>
-                <p>
-                    bootsrap,
-                </p>
-                <p>
-                    tailwind
-                </p>
-            </li>
-            <li class="skillItem px-6 py-4 bg-primary flex flex-wrap items-start gap-y-1 gap-x-2 gap-x-3">
-                <p class="text-secondary">
-                    frontend:
-                </p>
-                <p>
-                    html5,
-                </p>
-                <p>
-                    css3,
-                </p>
-                <p>
-                    javascript,
-                </p>
-                <p>
-                    scss,
-                </p>
-                <p>
-                    sass,
-                </p>
-                <p>
-                    bootsrap,
-                </p>
-                <p>
-                    tailwind
-                </p>
-            </li>
-            <li class="skillItem px-6 py-4 bg-primary flex flex-wrap items-start gap-y-1 gap-x-2 gap-x-3">
-                <p class="text-secondary">
-                    frontend:
-                </p>
-                <p>
-                    html5,
-                </p>
-                <p>
-                    css3,
-                </p>
-                <p>
-                    javascript,
-                </p>
-                <p>
-                    scss,
-                </p>
-                <p>
-                    sass,
-                </p>
-                <p>
-                    bootsrap,
-                </p>
-                <p>
-                    tailwind
-                </p>
-                <p>
-                    javascript,
-                </p>
-                <p>
-                    scss,
-                </p>
-                <p>
-                    sass,
-                </p>
-                <p>
-                    bootsrap,
-                </p>
-                <p>
-                    tailwind
-                </p>
-            </li>
+            {% endfor %}
         </ul>
+        {% else %}
+        <p>
+            NO SKILLS YET!
+        </p>
+        {% endif %}
     </div>
 </section>

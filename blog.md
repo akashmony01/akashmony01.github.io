@@ -1,6 +1,9 @@
 ---
 layout: blog
-title: this is blog page
+title: Blog
+hero:
+    heading: 'Code Chronicles:'
+    subheading: a programmer's journey
 ---
 
 about page

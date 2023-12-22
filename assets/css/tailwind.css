@@ -182,7 +182,7 @@
         @apply md:pl-14;
     }
 
-    #header.scrolled .pageTitle {
+    #header.scrolled .sectionTitle {
         @apply static md:absolute top-4 left-4 text-secondary;
     }
 
@@ -215,5 +215,25 @@
 
     .bgBox .bgBoxInner{
         @apply sticky z-10;
+    }
+
+    .postItem .postImage {
+        @apply relative overflow-hidden;
+    }
+
+    .postItem .postImage img {
+        @apply duration-300 transform;
+    }
+
+    .postItem .postText{
+        @apply duration-300;
+    }
+
+    .postItem:hover .postImage img {
+        @apply scale-110;
+    }
+    
+    .postItem:hover .postText{
+        @apply bg-primary;
     }
 }

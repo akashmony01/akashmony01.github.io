@@ -32,7 +32,11 @@ module.exports = {
         roboto: ['Roboto Slab', 'sans-serif'],
 			},
     },
+    container: {
+			center: true,
+			padding: '20px'
+		},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'),],
 }
 

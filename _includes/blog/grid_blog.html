@@ -1,0 +1,33 @@
+<section class="py-16 lg:py-20">
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-10">
+        {% for post in site.posts %}      
+        <a href="{{post.url}}" class="postItem block hover:opacity-100">
+            <figure class="postImage relative z-0 w-full aspect-video border-4 border-primary-light shadow-md bg-primary/50">
+                {% if post.image %}
+                <img
+                    class="w-full h-full object-cover object-center"
+                    src="{{post.image}}"
+                    alt="img"
+                />
+                {% endif %}
+            </figure>
+            <article class="postText sticky z-10 -mt-10 mx-5 bg-primary-light p-5 shadow-md">
+                {% if post.title %}
+                <h3 class="capitalize text-xl md:text-2xl hover:underline font-bold text-secondary ">
+                    {{ post.title }}
+                </h3>
+                {% endif %}
+
+                {% if post.excerpt %}
+                <p class="mt-4">
+                    {{post.excerpt|safe}}
+                </p>
+                {% endif %}
+                <span class="mt-4 block hover:underline font-bold text-secondary">
+                    Read More
+                </span>
+            </article>
+        </a>
+        {% endfor %}
+    </div>
+</section>

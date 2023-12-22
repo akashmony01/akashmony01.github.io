@@ -2,10 +2,13 @@
 layout: base
 ---
 
-{% include header.html %}
+{% include header_2.html for_blog=true %}
 
-<main
-    id="homeBody"
-    class="min-h-screen"
+<main 
+    id="blogBody" 
+    class="pt-20"
 >
+    {% include blog/hero_blog.html %}
+    {% include blog/grid_blog.html %}
+    {% include contact.html %}
 </main>

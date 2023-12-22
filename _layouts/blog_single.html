@@ -1,0 +1,13 @@
+---
+layout: base
+---
+
+{% include header_2.html for_blog=true page_title=page.title %}
+
+<main 
+    id="blogSingleBody" 
+    class="pt-20"
+>
+    {% include blog/content_blog.html %}
+    {% include contact.html %}
+</main>
