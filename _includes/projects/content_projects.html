@@ -11,14 +11,20 @@
         {% endif %}
         <article class="flex flex-col">
             <h1>
-                {{page.title}}
+                Title: {{page.title}}
             </h1>
             <div>
                 <a href="{{page.link}}" target="_blank">
-                    Live link: {{page.title}}
+                    Live url: {{page.title}}
                 </a>
+                <p target="_blank">
+                    <span class="font-semibold">
+                        Made with: 
+                    </span>
+                    {{page.made_with}}
+                </p>
             </div>
-            <div>
+            <div class="projectContent">
                 {{page.content|safe}}
             </div>
         </article>

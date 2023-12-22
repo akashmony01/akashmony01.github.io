@@ -236,4 +236,9 @@
     .postItem:hover .postText{
         @apply bg-primary;
     }
+
+    .projectContent img,
+    .blogContent img {
+        @apply shadow-md;
+    }
 }
