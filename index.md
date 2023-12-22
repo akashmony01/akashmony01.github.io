@@ -2,6 +2,7 @@
 layout: home
 title: Portfolio
 hero:
+    image: /assets/images/akash.jpeg
     subheading: Hi there! this is..
     heading1: MOHAMMED
     heading2: AKASH

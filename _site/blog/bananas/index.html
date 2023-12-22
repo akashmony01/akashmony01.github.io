@@ -17,11 +17,17 @@
     class="header-index fixed top-0 left-0 right-0 bg-primary-dark"
 >
     <div class="container h-20 flex items-center justify-between gap-4 text-base sm:text-lg md:text-xl shadow-md">
-        <a href="/" class="font-medium uppercase">
-            Mohammed's
+        <a href="/" class="flex gap-1 items-center hover:text-secondary">
+            <span class="block text-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>                                                                                  
+            </span>
+            <span class="block">
+                Home
+            </span>
         </a>
         <div class="flex flex-wrap items-center gap-y-1 gap-x-4">
-            
             <a href="/blog" class="flex gap-1 items-center hover:text-secondary">
                 <span class="block text-secondary">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
@@ -32,9 +38,16 @@
                     Blog
                 </span>
             </a>
-            
-
-            
+            <a href="/projects" class="flex gap-1 items-center hover:text-secondary">
+                <span class="block text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z" />
+                    </svg>                                              
+                </span>
+                <span class="block">
+                    Projects
+                </span>
+            </a>
         </div>
     </div>
 </header>
@@ -185,7 +198,7 @@ red, purple, or brown when ripe.</p>
     </div>
     <div 
         class="
-            flex flex-col justify-center w-full bg-primary px-8 pb-12 md:py-12 lg:px-12 lg:py-16 xl:px-14 xl:py-20
+            colPaddingTwo flex flex-col justify-center w-full bg-primary
              lg:w-6/12 
         "
     >

@@ -1,10 +1,12 @@
 <section id="welcome" class="lg:min-h-screen flex flex-col lg:flex-row md:items-streatch">
     <figure class="w-full lg:w-5/12 bg-primary-light">
+        {% if page.hero.image %}
         <img 
             class="h-full min-w-full object-cover duration-300 grayscale hover:grayscale-0"
-            src="/assets/images/akash.jpeg" 
+            src="{{page.hero.image}}" 
             alt="img"
         />
+        {% endif %}
     </figure>
     <article class="colPaddingOne w-full lg:max-h-full lg:w-7/12 bg-primary flex flex-col items-start justify-center md:overflow-y-auto">
         {% if page.hero.subheading %}
