@@ -1,0 +1,29 @@
+---
+layout: base
+---
+
+{% include header_2.html %}
+
+<main 
+    id="projectsBody" 
+    class="pt-20"
+>
+    <section style="min-height: calc(100vh - 80px);" class="flex flex-col items-center justify-center text-primary py-20">
+        <div class="container max-w-xl text-center">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold">
+                {{page.title}}
+            </h1>
+            <h2 class="mt-6 text-xl md:text-2xl lg:text-3xl font-medium">
+                {{page.heading}}
+            </h2>
+            <article class="mt-4 text-base md:text-lg lg:text-xl">
+                {{page.desc|safe}}
+            </article>
+            <a href="{{page.button.link}}" class="mt-10 inline-block px-10 py-3 border-2 border-primary hover:bg-primary hover:text-textColor font-bold uppercase">
+                {{page.button.label}}
+            </a>
+        </div>
+    </section>
+
+    {% include contact.html %}
+</main>

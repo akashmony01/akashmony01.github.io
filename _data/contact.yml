@@ -1,3 +1,6 @@
 info_heading: Find me on
 form_heading: Say hello..
+form_action: https://submit-form.com/D8Kwf1TJC
+thanks_url: /thanks
+error_url: /error
 button_text: SEND MESSAGE 
