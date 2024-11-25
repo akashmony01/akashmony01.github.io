@@ -1,4 +1,4 @@
-<section class="py-16 lg:py-20 text-primary">
+<section class="py-16 lg:py-20 text-textColor">
     <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-14 gap-x-10">
         {% for project in site.projects %}      
         <a href="{{project.url}}" class="postItem block hover:opacity-100">
@@ -12,7 +12,7 @@
                 {% endif %}
             </figure>
             {% if project.title %}
-                <h3 class="mt-5 text-lg sm:text-xl lg:text-2xl hover:underline font-bold">
+                <h3 class="mt-5 text-lg sm:text-xl lg:text-2xl hover:underline font-bold text-secondary">
                     {{ project.title }}
                 </h3>
                 {% endif %}

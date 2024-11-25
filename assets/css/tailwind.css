@@ -162,13 +162,13 @@
         @apply w-full md:w-48 xl:w-52 duration-300;
     }
 
-    #header.scrolled {
+    /* #header.scrolled {
         @apply w-full md:w-14;
-    }
+    } */
 
-    #header.scrolled .menuItem .label {
+    /* #header.scrolled .menuItem .label {
         @apply hidden;
-    }
+    } */
 
     #header .menuItem.active {
         @apply text-secondary;
@@ -178,9 +178,9 @@
         @apply pl-0 md:pl-48 xl:pl-52 duration-300;
     }
 
-    #homeBody.scrolled {
+    /* #homeBody.scrolled {
         @apply md:pl-14;
-    }
+    } */
 
     #header.scrolled .sectionTitle {
         @apply static md:absolute top-4 left-4 text-secondary;

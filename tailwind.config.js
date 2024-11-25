@@ -14,16 +14,16 @@ module.exports = {
     extend: {
       colors:{
         primary: {
-          DEFAULT: "#202020", dark: "#0B0B0B", light: "#343434"
+          DEFAULT: "#f5f5f5", dark: "#d0d0d0", light: "#e0e0e0"
         },
         secondary: {
-          DEFAULT: "#FFBD59"
+          DEFAULT: "#1230AE"
         },
         textColor: {
-          DEFAULT: "#FFF",
+          DEFAULT: "#111",
         },
         borderColor: {
-          DEFAULT: "#FFF"
+          DEFAULT: "#1230AE"
         }
       },
       fontFamily: {
